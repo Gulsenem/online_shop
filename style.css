@@ -92,6 +92,7 @@ header .search input
 {
     width: 90%;
 }
+
 header .search i
 {
     color:var(--accent);
@@ -103,9 +104,17 @@ main
 }
 aside{
     width: 6%;
-    min-height: max-content;
-
+    min-height:80vh;
 }
+aside .social_links button i
+{
+    color:gray;
+}
+aside .social_links button i:hover
+{
+    color:var(--primary);
+}
+
 .kreis
 {
     width: 10px;
@@ -114,28 +123,53 @@ aside{
     border-radius: 50%;
     margin-top: 2px;
 }
-section{
-    
-    min-height: max-content;
-    margin-top:25px;
+.kreis.active
+{
+    background-color: #145858;
 }
+
 .container
 {
     width: 88%;
+    min-height:80vh;
+    position: relative;
+}
+section
+{
+    margin-top:25px;
+    height: 100%;
 }
 
 .bild_box
 {
-    width: 60vw;
-    height: 70vh;
+    width: 80%;
+    height: 100%;
     background-color: var(--secondary);
 }
 .menu
 {
-    width: 60vw;
+    width: 60%;
     margin-top: 20px;
 }
 .menu a
 {
     margin: 0 20px
+}
+.menu a.active{
+    color:var(--primary);
+    font-weight: bold;
+}
+/******** next_button  ******/
+.nx_btn
+{
+    color:gray;
+    position: absolute;
+    top:45%;
+    right:0;
+}
+.pr_btn
+{    color:gray;
+    position: absolute;
+    top:45%;
+    left:0;
 }

@@ -37,14 +37,25 @@
                 </aside>
 
                 <div class="container ">
+                    <div class="nx_btn" onclick="next()" >
+                        <small >Herren</small>
+                        <i class="far fa-angle-right"></i>
+                    </div>
+                    
+                    <div class="pr_btn" onclick="prev()" >
+                        
+                        <i class="far fa-angle-left"></i>
+                        <small >Kids</small>
+                    </div>
+
                     <section class="flex_col">
-                        <div class="bild_box">
+                        <div class="bild_box" id="bild_box">
                             Women
                         </div>
 
                         <div class="menu flex_center">
                             
-                                <a href="">New</a>
+                                <a href="" class="active">New</a>
                                 <a href="">Beuty</a>
                                 <a href="">Shuhe</a>
                                 <a href="">Jeans</a>
@@ -52,13 +63,14 @@
                         </div>                    
                     </section>
 
+
                 </div>
 
                 <aside class="flex_col" >
                     <button id="warenkorb" class="btn_primary"> <i class="far fa-shopping-cart"></i> </button>
                     <div class="kreis_pg">
-                        <div class="kreis"></div>
-                        <div class="kreis"></div>
+                        <div class="kreis active"></div>
+                        <div class="kreis "></div>
                         <div class="kreis"></div>
                         <div class="kreis"></div>
 
@@ -67,6 +79,6 @@
             </div>
 
         </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
