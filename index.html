@@ -36,29 +36,33 @@
                     </div>
                 </aside>
 
-                <div class="container ">
-                    <div class="nx_btn" onclick="next()" >
-                        <small >Herren</small>
+                <div class="container " id="container" >
+                    <div class="nx_btn" onclick="change_container(step_container+1)" >
+                        
                         <i class="far fa-angle-right"></i>
                     </div>
                     
-                    <div class="pr_btn" onclick="prev()" >
+                    <div class="pr_btn" onclick="change_container(step_container-1)" >
                         
                         <i class="far fa-angle-left"></i>
-                        <small >Kids</small>
+                        
                     </div>
 
                     <section class="flex_col">
-                        <div class="bild_box" id="bild_box">
-                            Women
+                        <div class="bild_box flex_col" id="bild_box">
+                             <p id="text_type">Women</p> 
+                            <div id="image"></div>
+                            
+
                         </div>
 
-                        <div class="menu flex_center">
+                        <div class="menu flex_center" id="menu">
                             
-                                <a href="" class="active">New</a>
-                                <a href="">Beuty</a>
-                                <a href="">Shuhe</a>
-                                <a href="">Jeans</a>
+                            <a href="">New</a>
+                            <a href="">Beuty</a>
+                            <a href="">Shuhe</a>
+                            <a href="">Jeans</a>
+
                             
                         </div>                    
                     </section>
@@ -68,11 +72,7 @@
 
                 <aside class="flex_col" >
                     <button id="warenkorb" class="btn_primary"> <i class="far fa-shopping-cart"></i> </button>
-                    <div class="kreis_pg">
-                        <div class="kreis active"></div>
-                        <div class="kreis "></div>
-                        <div class="kreis"></div>
-                        <div class="kreis"></div>
+                    <div id="kreis_pg">
 
                     </div>
                 </aside>                
