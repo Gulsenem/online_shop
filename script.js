@@ -42,6 +42,10 @@ const bild_box_arr =
                 link_href: "#",
             },
             {
+                link_name: "Tshirt",
+                link_href: "#",
+            },
+            {
                 link_name: "Join Life",
                 link_href: "#",
             }
@@ -91,40 +95,29 @@ function change_container(move_to) // gruba göra kontaineri üytgedyar
         {
             document.getElementById("text_type").innerHTML = bild_box_arr[i].type; 
             document.getElementById("image").style.backgroundImage = bild_box_arr[i].image;
-                
+  
+                   
             for(let a=0; a<bild_box_arr[i].menu_links.length; a++)
             {  
-                let links = document.createElement("a");          
-                links.innerHTML = bild_box_arr[i].menu_links[a]; 
-                document.getElementById("menu").appendChild(links);
-
-                if (document.getElementById("menu").hasChildNodes()) {
-                console.log("bar");
-                while (document.getElementById("menu").hasChildNodes()) {
-                    document.getElementById("menu").removeChild(document.getElementById("menu").firstChild);
-                  }
-                }  
-                
+                const menu_a = document.getElementById("menu");
+                //const circle_btn = document.getElementById("kreis_pg"); 
 
 
+                menu_a.getElementsByTagName("a")[a].innerHTML = bild_box_arr[i].menu_links[a].link_name; 
 
-                let circle = document.createElement("div");
-                circle.classList.add("kreis");
-                document.getElementById("kreis_pg").appendChild(circle);
-                
-                console.log(bild_box_arr[i].menu_links[a]);      
-                
-              
+                console.log(bild_box_arr[i].menu_links[a].link_name + " = " + bild_box_arr[i].menu_links[a].link_href);      
+
 
 
             }
 
 
         }
+
     }
 }
 ///////////////////////////////////////////////////////////
-/*
+
 let kreis=document.getElementsByClassName('kreis');
 kreis[0].classList.toggle("active");
 
@@ -132,7 +125,7 @@ kreis[0].classList.toggle("active");
 
 
 
-
+/*
 for(let k=0; k<kreis.length; k++)
 {
     kreis[k].addEventListener("click", ()=>{
