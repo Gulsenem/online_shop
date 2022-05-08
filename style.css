@@ -97,6 +97,51 @@ header .search i
 {
     color:var(--accent);
 }
+/********************  Hamburger  *****************/
+#bars_container
+{
+    width: 150px;
+    padding: 15px;
+    height: 185px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left:0;
+    z-index: 1;
+    overflow: hidden;
+
+    animation:  my_bars1 0.15s normal;
+    
+}
+#bars_container a
+{
+    margin-top: 10px;
+    
+}
+#bars_container a:hover
+{
+    color: var(--primary);
+}
+
+@keyframes my_bars1{
+    0%   {height: 47px;  }
+    25%  {height: 80px; }
+    50%  {height: 111px; }
+    75%  {height: 148px; }
+    100% {height: 185px;}
+    
+  }
+
+  @keyframes my_bars2{
+    0%   {height: 185px;  }
+    25%  {height: 148px; }
+    50%  {height: 111px; }
+    75%  {height: 80px; }
+    100% {height: 47px;}
+  }
+
+
 /********************  Main  *****************/
 main
 {
@@ -105,6 +150,7 @@ main
 aside{
     width: 6%;
     min-height:80vh;
+    position: relative;
 }
 aside .social_links button i
 {
@@ -114,8 +160,13 @@ aside .social_links button i:hover
 {
     color:var(--primary);
 }
-
-.kreis
+/******************** kreis  *****************/
+#kreis_pg
+{
+    display: flex;
+    flex-direction: column;
+}
+#kreis_pg>div
 {
     width: 10px;
     height: 10px;
@@ -123,7 +174,7 @@ aside .social_links button i:hover
     border-radius: 50%;
     margin-top: 2px;
 }
-.kreis.active
+#kreis_pg>div.active
 {
     background-color: #145858;
 }

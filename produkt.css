@@ -1,0 +1,95 @@
+.konto button
+{
+    color:var(--accent);
+    background-color: inherit;
+}
+
+.prd_mainImageWithSwiping
+{
+    width: 50%;
+}
+.prd_swip
+{
+    width: 15%;
+    text-align: center;
+}
+.prd_swip i
+{
+    margin: 10px;
+}
+.swip_img_box
+{
+    height: 500px;
+    overflow: hidden;
+}
+.img{
+    padding: 3px;
+    width: 70px;
+    height: 100px;
+    margin:0 auto;
+    background-color: beige;
+    border: 1px solid rgb(207, 205, 205);
+    margin-bottom: 10px;
+}
+.prd_mainImage
+{
+    width: 80%;
+    height: 90%;
+    margin-top: 20px;
+    text-align: center;
+}
+.prd_mainImage img
+{
+    width: 80%;
+    height: 100%;
+    
+}
+
+.prd_information{
+    width: 50%;
+    margin-left: 50px;
+}
+.prd_size > button
+{
+    border: 1px solid var(--primary);
+    background-color: inherit;
+    color:var(--primary);
+
+}
+.prd_color>div
+{display:flex}
+.prd_colorType
+{
+    width: 30px;
+    height:30px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin-bottom: 20px
+}
+.prd_beschreibung
+{
+    padding: 0 10px;
+}
+.prd_beschreibung span, .prd_preis>small
+{
+    color:rgb(177, 176, 176);
+}
+.btns
+{
+        margin-top: 50px;
+}
+.btns>button:first-child
+{
+    background-color: var(--primary);
+    color:var(--accent)
+}
+.btns>button:last-child
+{
+    border: 1px solid var(--primary);
+}
+.btns>button>i
+{
+    margin-right: 20px;
+    
+}
