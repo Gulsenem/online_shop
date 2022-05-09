@@ -49,12 +49,17 @@
     width: 50%;
     margin-left: 50px;
 }
-.prd_size > button
+#prd_size>button
 {
     border: 1px solid var(--primary);
     background-color: inherit;
     color:var(--primary);
-
+    margin-right: 10px;
+}
+#prd_size>button.aktiv
+{
+    background-color: var(--primary);
+    color:white;
 }
 .prd_color>div
 {display:flex}
