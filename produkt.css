@@ -17,7 +17,7 @@
 {
     margin: 10px;
 }
-.swip_img_box
+#swip_img_box
 {
     height: 500px;
     overflow: hidden;
@@ -27,18 +27,17 @@
     width: 70px;
     height: 100px;
     margin:0 auto;
-    background-color: beige;
     border: 1px solid rgb(207, 205, 205);
     margin-bottom: 10px;
 }
-.prd_mainImage
+#prd_mainImage
 {
     width: 80%;
     height: 90%;
     margin-top: 20px;
     text-align: center;
 }
-.prd_mainImage img
+#prd_mainImage img
 {
     width: 80%;
     height: 100%;
@@ -61,7 +60,7 @@
     background-color: var(--primary);
     color:white;
 }
-.prd_color>div
+#prd_color>div
 {display:flex}
 .prd_colorType
 {
