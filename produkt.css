@@ -71,6 +71,12 @@
     background-color: aquamarine;
     margin-bottom: 20px
 }
+.prd_colorType.active
+{
+    border: 3px solid rgb(15, 14, 14);
+}
+
+
 .prd_beschreibung
 {
     padding: 0 10px;

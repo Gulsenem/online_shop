@@ -1,18 +1,38 @@
-let swIMG = ["url('img/chibi1.png')", "url('img/chibi2.png')", "url('img/chibi3.png')", "url('img/chibi4.png')", "url('img/chibi5.png')"];
+let swIMG = ["img/chibi1.png", "img/chibi2.png", "img/chibi3.png", "img/chibi4.png", "img/chibi5.png"];
+
 
 
 let swip_img_box = document.getElementById("swip_img_box");
-
-for(let img=0; img<swIMG.length; img++)
+function create_img_div()
 {
-    let img_div = document.createElement("div");
-    img_div.classList.add("img");
-    img_div.style.backgroundImage = swIMG[img];
-    swip_img_box.appendChild(img_div);
-    
-    img_div.addEventListener("click", function()
+        for(let img=0; img<swIMG.length; img++)
     {
-        let mainBild = document.getElementById("mainBild");
-        main_Bild.style.src = this.style.backgroundImg;
-    })
+        let img_div = document.createElement("div");
+        img_div.classList.add("img");
+        img_div.style.backgroundImage = "url('" + swIMG[img] + "')";
+        swip_img_box.appendChild(img_div);
+        
+        img_div.addEventListener("click", function()
+        {
+            let mainBild = document.getElementById("mainBild");
+
+            mainBild.src = swIMG[img];
+        })
+    }
+
+}
+create_img_div();
+
+
+
+//change swip_img_box
+let step_sw = 0;
+
+function swip(move)
+{
+    
+    if(move>swIMG.length){move=0}
+    if(move<0){move=swIMG.length}
+    
+    
 }

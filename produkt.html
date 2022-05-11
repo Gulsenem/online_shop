@@ -24,19 +24,20 @@
         <div class="wrapper flex_sp_btw">
             <div class="prd_mainImageWithSwiping flex_sp_btw">
                 <div class="prd_swip">
-                    <i class="far fa-chevron-up"></i> 
+                    <i onclick="swip(step_sw +1)" class="far fa-chevron-up"></i> 
                     <div id="swip_img_box">
 
                     </div>
-                     <i class="far fa-chevron-down"></i>
+                     <i onclick="swip(step_sw -1)" class="far fa-chevron-down"></i>
                 </div>
                 <div id="prd_mainImage">
                     <img id="mainBild" src="img/pngfr.png" alt="">
                 </div>
             </div>
             <div class="prd_information">
+                
                 <div id="prd_size" >
-                    <p>Größe (Normalgrößen) : <b id="size_value"></b>  </p>
+                 <p>Größe (Normalgrößen) : <b id="size_value"></b>  </p>   
 
                 </div>
                 <div id="prd_color">
@@ -67,7 +68,7 @@
                     </span>
                 </div>
                 <div class="btns">
-                    <button> <i class="far fa-shopping-cart"></i> In den Warenkorb</button>
+                    <button onclick="in_warenkorb()"> <i class="far fa-shopping-cart"></i> In den Warenkorb</button>
                     <button class="btn_primary"> <i class="far fa-heart"></i> Artikel merken</button>
                 </div>
                 
@@ -77,5 +78,6 @@
     <footer></footer>
     <script src="prd_size.js"></script>
     <script src="swip_img.js"></script>
+    <script src="save_product.js"></script>
 </body>
 </html>
